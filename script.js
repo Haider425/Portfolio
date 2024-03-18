@@ -11,9 +11,9 @@ function toggleTheme(isDarkMode) {
   const root = document.documentElement;
   const icons = document.querySelectorAll('.icons2');
   const arrows = document.querySelectorAll('.arrow');
-  
+
   root.classList.toggle('dark', isDarkMode);
-  
+
   icons.forEach(icon => {
     if (isDarkMode) {
       icon.style.filter = 'invert(100%) sepia(0%) saturate(13%) hue-rotate(275deg) brightness(106%) contrast(106%)';
@@ -46,7 +46,7 @@ function setInitialTheme() {
 // Event listener for theme toggle button
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
-toggle.addEventListener('click', function() {
+toggle.addEventListener('click', function () {
   const isDarkMode = !document.documentElement.classList.contains('dark');
   toggleTheme(isDarkMode);
   this.classList.toggle('bi-moon', isDarkMode);

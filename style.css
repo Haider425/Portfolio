@@ -1,99 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import "https://unpkg.com/open-props/easings.min.css";
 
-:root, :root.light {
-    --color-background-primary: #f8f8f8; /* Light Mode Default */
-    --color-text-primary: #212121; /* Light Mode Default */
-    --color-text-secondary: #666666;
-    --color-accent: #6A476F; /* Example accent color */
-  }
-  
-  :root.dark {
-    --color-background-primary: #1d1d1d;
-    --color-text-primary: #eaeaea;
-    --color-text-secondary: #cccccc;
-    --color-accent: #6A476F; /* Slightly desaturated accent */
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif;
-    background-color: var(--color-background-primary); /* Added background-color */
-  }
-
-a, .btn{
-    transition: all 0.3s ease;
+:root,
+:root.light {
+  --color-background-primary: #f8f8f8; /* Light Mode Default */
+  --color-text-primary: #212121; /* Light Mode Default */
+  --color-text-secondary: #666666;
+  --color-accent: #6a476f; /* Example accent color */
 }
 
-nav, .nav-links{
-    display: flex;
+:root.dark {
+  --color-background-primary: #1d1d1d;
+  --color-text-primary: #eaeaea;
+  --color-text-secondary: #cccccc;
+  --color-accent: #6a476f; /* Slightly desaturated accent */
 }
 
-nav{
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links{
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.2rem;
+html {
+  scroll-behavior: smooth;
 }
 
-.toggle{
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(
+    --color-background-primary
+  ); /* Added background-color */
+}
+
+a,
+.btn {
+  transition: all 0.3s ease;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.toggle {
   position: absolute;
   top: 2.7%;
   right: 3%;
-
 }
-i{
+i {
   font-size: 2.5rem;
   cursor: pointer;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease;
 }
 
-i:hover{
-  filter: invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg) brightness(94%) contrast(94%);
+i:hover {
+  filter: invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg)
+    brightness(94%) contrast(94%);
 }
 
-.toggle:hover{
+.toggle:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
 
-a{
-    text-decoration: none;
-    color: var(--color-text-primary);
-    text-decoration-color: var(--color-accent);
-    font-weight: 400;
+a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  text-decoration-color: var(--color-accent);
+  font-weight: 400;
 }
 
-a:hover{
-    color: var(--color-accent);
-    text-decoration: underline;
-    text-underline-offset: .8rem;   
-    text-decoration-color: var(--color-accent);
-  
+a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+  text-decoration-color: var(--color-accent);
 }
 
-.logo{
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--color-text-primary);
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
 }
 
-.logo:hover{
-    cursor: default;
+.logo:hover {
+  cursor: default;
 }
 
 #hamburger-nav {
@@ -174,7 +178,6 @@ a:hover{
   transform: none;
 }
 
-
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -237,8 +240,6 @@ section {
   gap: 1rem;
 }
 
-
-
 /* ICONS */
 
 .icon {
@@ -250,9 +251,6 @@ section {
 .icon:hover {
   transform: scale(1.1);
 }
-
-
-
 
 /* BUTTONS */
 
@@ -290,7 +288,6 @@ section {
 .btn-color-2 {
   background-color: var(--color-text-primary);
   color: var(--color-text-primary);
-
 }
 
 .btn-color-1:hover {
@@ -331,21 +328,17 @@ section {
   background-color: var(--color-accent);
 }
 
-
-
-
-
 /* ABOUT SECTION */
 
 #about {
   position: relative;
 }
 
-#about .section__text__p1{
+#about .section__text__p1 {
   font-size: 1.4rem;
 }
 
-#about .title{
+#about .title {
   font-size: 2rem;
 }
 
@@ -355,7 +348,7 @@ section {
   margin-top: 2rem;
 }
 
-.details-container h2{
+.details-container h2 {
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
   color: var(--color-text-secondary);
@@ -380,13 +373,13 @@ section {
   right: -5rem;
   bottom: 2.5rem;
   transition: all 300ms ease;
-  filter: invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg) brightness(94%) contrast(94%);
+  filter: invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg)
+    brightness(94%) contrast(94%);
 }
 
 .arrow:hover {
   cursor: pointer;
   transform: scale(1.1);
-
 }
 
 .details-container {
@@ -408,7 +401,7 @@ section {
   color: var(--color-text-secondary);
 }
 
-.text-container p{
+.text-container p {
   color: var(--color-text-secondary);
 }
 
@@ -473,7 +466,6 @@ article .icon {
   border-color: var(--color-text-primary);
   background: var(--color-background-primary);
   height: 20rem;
-
 }
 
 .project-img {
@@ -483,7 +475,6 @@ article .icon {
   object-fit: cover;
   aspect-ratio: 16/10;
 }
-
 
 .project-title {
   margin: 1rem;
@@ -496,8 +487,7 @@ article .icon {
   border-color: var(--color-text-primary);
 }
 
-
-.btn2:hover{
+.btn2:hover {
   background: var(--color-accent);
   color: var(--color-background-primary);
   border: var(--color-accent) 0.1rem solid;
@@ -512,12 +502,13 @@ article .icon {
   margin-top: 2rem;
 }
 
-.projectArrow{
+.projectArrow {
   position: absolute;
   right: -5rem;
   bottom: 0rem;
   transition: all 300ms ease;
-  filter: invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg) brightness(94%) contrast(94%);
+  filter: invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg)
+    brightness(94%) contrast(94%);
 }
 
 /* CONTACT SECTION */
@@ -563,19 +554,18 @@ article .icon {
 
 /* FOOTER SECTION */
 
-.footerArrow{
+.footerArrow {
   position: relative;
   right: -73.5rem;
   bottom: 5rem;
   transition: all 300ms ease;
-  filter: invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg) brightness(94%) contrast(94%);
+  filter: invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg)
+    brightness(94%) contrast(94%);
   rotate: 180deg;
 }
-
 
 footer p {
   text-align: center;
   color: var(--color-text-secondary);
-  font-size: .8rem;
-
+  font-size: 0.8rem;
 }

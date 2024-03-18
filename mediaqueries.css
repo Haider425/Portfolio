@@ -1,19 +1,19 @@
 @media screen and (max-width: 1200px) {
-    #desktop-nav{
-        display: none;
-    }
-    #hamburger-nav{
-        display: flex;
-    }
-    nav{
-        justify-content: space-around;
-    }
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  nav {
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 768px) {
-    .project-grid {
-      grid-template-columns: 1fr;
-    }
+  .project-grid {
+    grid-template-columns: 1fr;
   }
+}
 
 /* Media queries for tablet devices */
