@@ -13,7 +13,7 @@
     <link rel="icon" href="/images/tab-icon.png" type="image/x-icon" />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body id="body" style="display:none">
     <nav id="desktop-nav">
       <div class="logo">Haider Saleem</div>
       <div>
@@ -512,4 +512,11 @@
       />
     </footer>
   </body>
+  <script type="text/javascript">
+    window.onload = function () {
+        setTimeout(function() {
+            document.getElementById("body").style.display = "";        
+        }, 10);
+    }
+</script>
 </html>
