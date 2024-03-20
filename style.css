@@ -84,6 +84,10 @@ a {
   font-weight: 400;
 }
 
+.downarrow{
+  display: none;
+}
+
 a:hover {
   color: var(--color-accent);
   text-decoration: underline;

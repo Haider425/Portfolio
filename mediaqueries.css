@@ -189,8 +189,8 @@
 .toggle{
     position: absolute;
     top: 4px;
-    left: 20px;
-    width: 20px;
+    left: 30px;
+    width: 30px;
   }
   nav {
     justify-content: space-around;
@@ -465,14 +465,25 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-top: 25rem;
+      margin-top: 5rem;
       align-items: center;
       height: 50vh;
-      display: none;
+      display: unset;
+      position: relative;
+      bottom: 0;
   }
 
+  #contact .title{
+    font-size: 2rem;
+  }
+  .contact-info-container .icon{
+    font-size: 1rem;
+  }
+  .contact-info-container a{
+    font-size: 1rem;
+  }
   .contact-info-upper-container{
-    width: 100%;
+    width: 80%;
     
   }
 
@@ -485,9 +496,16 @@
   }
 
   footer{
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
   }
 
+  footer a{
+    font-size: 1rem;
+  }
 }
 
 
