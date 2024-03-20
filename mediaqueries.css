@@ -143,113 +143,169 @@
 }
 
 /* For mobile screens (max-width: 767px) */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 425px) {
+
+
   #desktop-nav {
     display: none;
   }
-
   #hamburger-nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
   }
-
   nav {
     justify-content: space-around;
   }
 
-  .section__pic-container {
+  #profile{
+    height: 75vh;
+    margin-bottom: 6rem;
+  }
+
+  #hamburger-nav .toggle{
+    position: absolute;
+    top: 5%;
+    right: 0%;
+  }
+
+  i:hover{
+    filter: none;
+  }
+
+  .toggle:hover{
+    transform: scale(1);
+  }
+
+  .section__pic-container{
     display: flex;
     justify-content: center;
     position: relative;
-    right: 0;
+    
+  }
+  .section__pic-container img{
+    display: none;
+    
   }
 
-  .section__pic-container img {
-    height: 200px;
-    width: 250px;
+  section {
+    padding: 0;
+  }
+
+  #about{
+    margin-top: 5rem;
+    height: auto;
+    margin-bottom: 10rem;
   }
 
   .section__text__p1 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--color-text-secondary);
   }
 
-  .about-details-container {
+  .about-details-container{
     text-align: center;
     position: relative;
-    right: 0;
+    right: 50px;
   }
 
   .section-container {
-    gap: 2rem;
-    height: auto;
+    gap: 3rem;
+    height: 50%;
     position: relative;
-    right: 0;
-  }
+    right: 55px;
+}
 
-  .arrow,
-  .footerArrow {
+  .arrow, .footerArrow{
     display: none;
   }
 
-  .experience-details-container .about-containers {
+  #experience{
+    position: relative;
+    height: auto;
+  }
+  .experience-details-container .about-containers{
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
+  
   }
 
   .article-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    justify-content: center;
+    justify-content: center; /* Center the content horizontally */
   }
 
   #projects {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin: auto;
-    margin-top: 10rem;
-    text-align: center;
+    margin-top: 5rem;
+    text-align: center; /* Center the content horizontally */
   }
-
+  
   .project-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 
+  
   #projects .experience-details-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     position: relative;
-    right: 0;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 100%;
+    margin-right: auto; /* Remove the specific right margin */
+    margin-left: auto; /* Add left margin */
+    max-width: 800px; /* Add a max-width to control the width */
   }
 
+  #projects .color-container .article-container img{
+    height: 100px;
+    width: 200px;
+  }
+  #projects .color-container h2{
+    font-size: 1rem;
+  }
+  
   #projects .color-container {
-    height: auto;
+    height: 200px;
+    width: 200px;
   }
 
-  #contact {
+  #projects .project-btn{
+    font-size: 0.8rem;
+    height: 2rem;
+    width: 5rem;
     display: flex;
-    flex-direction: column;
-    margin-top: 15rem;
+    justify-content: center;
     align-items: center;
+
   }
 
-  .contact-info-container {
+  
+  #contact{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 5rem;
+      align-items: center;
+      height: 50vh;
+  }
+
+  .contact-info-upper-container{
+    width: 100%;
+    
+  }
+
+  .contact-info-container{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     width: max-content;
   }
+
 }
 
 
