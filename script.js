@@ -78,7 +78,16 @@ function handleToggleTouch() {
   toggle2.style.transition = '1s';
 }
 
+function updateTextContent() {
+  const linkElement = document.querySelector('#contact .contact-info-container .email a');
+  const textContent = window.getComputedStyle(linkElement, '::after').content;
+  linkElement.textContent = textContent.slice(1, -1); // Remove the quotes from the content
+}
 
+// Call the function initially
+updateTextContent();
 
+// Call the function again on window resize
+window.addEventListener('resize', updateTextContent);
 // Call setInitialTheme when the page loads
 window.addEventListener('load', setInitialTheme);

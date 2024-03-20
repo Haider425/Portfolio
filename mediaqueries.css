@@ -242,7 +242,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    right: 36px;
+    right: 40px;
   }
 
 
@@ -464,38 +464,72 @@
     display: none;
   }
 
+  #projects .experience-details-container .project3{
+    margin-bottom: 10rem;
+  }
   
   #contact{
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-top: 5rem;
+      margin-top: 50rem;
       align-items: center;
       height: 50vh;
-      display: unset;
+      display: flex;
+      width: 100%;
       position: relative;
-      bottom: 0;
+      right: 160px
   }
+
+  #contact p{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    width: 130px;
+  } 
 
   #contact .title{
+    text-align: center;
     font-size: 2rem;
-  }
-  .contact-info-container .icon{
-    font-size: 1rem;
-  }
-  .contact-info-container a{
-    font-size: 1rem;
-  }
-  .contact-info-upper-container{
-    width: 80%;
-    
+    width: max-content;
   }
 
-  .contact-info-container{
+
+
+
+  #contact .contact-info-upper-container{
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  } 
+  #contact .contact-info-container p a{
+    font-size: 1rem;
+    position: relative;
+    right: 10px;
+  }
+  #contact .contact-info-container .email a{
+    content: "Email";
+    display: block;
+    position: relative;
+    left: 1px;
+
+  }
+
+  #contact .contact-info-container .linkedin a{
+    content: "Phone";
+    display: block;
+    position: relative;
+    left: 1px;
+  }
+  
+
+
+  #contact .contact-info-container{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     width: max-content;
   }
 
@@ -504,11 +538,33 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
   }
 
-  footer a{
-    font-size: 1rem;
+  footer nav {
+    width: 100%;
+    display: flex;
+  }
+
+  footer nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    position: relative;
+    left: 50px;
+  
+  }
+
+  footer nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  }
+
+  footer nav ul li a{
+    font-size: .8rem;
   }
 }
 
