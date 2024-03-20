@@ -10,8 +10,8 @@
   }
 
   #profile{
-    height: 70vh;
-    margin-bottom: 5rem;
+    height: 75vh;
+    margin-bottom: 6rem;
   }
 
   #hamburger-nav .toggle{
@@ -69,7 +69,7 @@
     right: 55px;
 }
 
-  .arrow{
+  .arrow, .footerArrow{
     display: none;
   }
 
@@ -122,9 +122,9 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-top: 10rem;
+      margin-top: 50rem;
       align-items: center;
-      height: 60vh;
+      height: 50vh;
   }
 
   .contact-info-upper-container{
@@ -138,12 +138,6 @@
     flex-direction: column;
     align-items: center;
     width: max-content;
-  }
-
-  .footerArrow{
-    position: absolute;
-    top: 394%;
-    left: 90%;
   }
 
 }
