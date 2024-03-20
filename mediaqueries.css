@@ -327,7 +327,11 @@
     flex-direction: column;
   
   }
-
+  #experience p,
+  #experience .title{
+    position: relative;
+    right: 7px;
+  }
   #experience p{
     text-align: center;
     font-size: 1rem;
@@ -350,7 +354,7 @@
     justify-content: center;
     width: min-content;
     position: relative;
-    width: 18rem;
+    width: 17rem;
     
   }
 
@@ -437,7 +441,7 @@
     height: 275px;
     width: 275px;
     position: relative;
-    right: 10px;
+    right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
