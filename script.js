@@ -11,6 +11,7 @@ function toggleTheme(isDarkMode) {
   const root = document.documentElement;
   const icons = document.querySelectorAll('.icons2');
   const arrows = document.querySelectorAll('.arrow');
+  const downarrow = document.querySelector('.downarrow');
   root.classList.toggle('dark', isDarkMode);
 
   icons.forEach(icon => {
@@ -28,6 +29,13 @@ function toggleTheme(isDarkMode) {
       arrow.style.filter = 'invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg) brightness(94%) contrast(94%)';
     }
   });
+
+  if (isDarkMode) {
+    downarrow.style.filter = 'invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg) brightness(94%) contrast(94%)';
+  } else {
+
+    downarrow.style.filter = 'invert(29%) sepia(62%) saturate(311%) hue-rotate(246deg) brightness(94%) contrast(94%)';
+  }
 }
 
 // Function to set initial theme based on localStorage
