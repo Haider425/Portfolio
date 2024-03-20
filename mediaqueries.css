@@ -16,9 +16,13 @@
     right: 50px;
   }
   .section__pic-container img{
-    height: 250px;
+    height: 300px;
     width: 300px;
     
+  }
+
+  section {
+    padding: 0;
   }
 
   .section__text__p1 {
@@ -61,7 +65,6 @@
     margin: auto;
     margin-top: 20rem;
     text-align: center; /* Center the content horizontally */
-    margin-bottom: 20rem;
   }
   
   .project-grid {
@@ -90,7 +93,7 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-top: 30rem;
+      margin-top: 5rem;
       align-items: center;
   }
 
