@@ -10,7 +10,7 @@
   }
 
   #profile{
-    height: 60vh;
+    height: 70vh;
   }
 
   #hamburger-nav .toggle{
@@ -113,7 +113,7 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-top: 15rem;
+      margin-top: 30rem;
       align-items: center;
       height: auto;
   }
