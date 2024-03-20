@@ -333,7 +333,7 @@
   #experience p,
   #experience .title{
     position: relative;
-    right: 7px;
+    right: 17px;
   }
   #experience p{
     text-align: center;
@@ -444,7 +444,7 @@
     height: 275px;
     width: 275px;
     position: relative;
-    right: 25px;
+    right: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
