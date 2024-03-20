@@ -20,6 +20,14 @@
     right: 3%;
   }
 
+  i:hover{
+    filter: none;
+  }
+
+  .toggle:hover{
+    transform: scale(1);
+  }
+
   .section__pic-container{
     display: flex;
     justify-content: center;
