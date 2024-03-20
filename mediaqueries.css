@@ -232,14 +232,19 @@
     
   }
 
+  .section__text__p2{
+    margin-bottom: 1rem;
+  }
+
   .section__text{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
-    right: 50px;
+    right: 30px;
   }
+
 
   section {
     padding: 0;
