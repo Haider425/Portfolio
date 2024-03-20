@@ -11,9 +11,7 @@ function toggleTheme(isDarkMode) {
   const root = document.documentElement;
   const icons = document.querySelectorAll('.icons2');
   const arrows = document.querySelectorAll('.arrow');
-
   root.classList.toggle('dark', isDarkMode);
-
   icons.forEach(icon => {
     if (isDarkMode) {
       icon.style.filter = 'invert(100%) sepia(0%) saturate(13%) hue-rotate(275deg) brightness(106%) contrast(106%)';
@@ -21,7 +19,6 @@ function toggleTheme(isDarkMode) {
       icon.style.filter = 'none';
     }
   });
-
   // Handle arrows
   arrows.forEach(arrow => {
     if (isDarkMode) {
@@ -46,7 +43,10 @@ function setInitialTheme() {
 // Event listener for theme toggle button
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
-toggle.addEventListener('click', function () {
+toggle.addEventListener('click', handleToggleClick);
+toggle.addEventListener('touchstart', handleToggleTouch);
+
+function handleToggleClick() {
   const isDarkMode = !document.documentElement.classList.contains('dark');
   toggleTheme(isDarkMode);
   this.classList.toggle('bi-moon', isDarkMode);
@@ -55,7 +55,12 @@ toggle.addEventListener('click', function () {
   body.style.transition = '1s';
   toggle.style.color = isDarkMode ? 'white' : 'black';
   toggle.style.transition = '1s';
-});
+}
+
+function handleToggleTouch(event) {
+  event.preventDefault(); // Prevent default touch behavior
+  handleToggleClick.call(this); // Call the click event handler
+}
 
 // Call setInitialTheme when the page loads
 window.addEventListener('load', setInitialTheme);

@@ -9,9 +9,13 @@
     justify-content: space-around;
   }
 
-  #desktop-nav .toggle{
+  #profile{
+    height: 50vh;
+  }
+
+  #hamburger-nav .toggle{
     position: absolute;
-    top: 2.7%;
+    top: 5%;
     right: 3%;
   }
 
@@ -33,6 +37,8 @@
 
   #about{
     margin-top: 5rem;
+    height: auto;
+    margin-bottom: 10rem;
   }
 
   .section__text__p1 {
@@ -49,15 +55,19 @@
 
   .section-container {
     gap: 3rem;
-    height: 80%;
+    height: 50%;
     position: relative;
     right: 55px;
 }
 
-  .arrow, .footerArrow{
+  .arrow{
     display: none;
   }
 
+  #experience{
+    position: relative;
+    height: auto;
+  }
   .experience-details-container .about-containers{
     display: flex;
     justify-content: center;
@@ -103,8 +113,14 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-top: 5rem;
+      margin-top: 15rem;
       align-items: center;
+      height: auto;
+  }
+
+  .contact-info-upper-container{
+    width: 100%;
+    
   }
 
   .contact-info-container{
@@ -113,6 +129,12 @@
     flex-direction: column;
     align-items: center;
     width: max-content;
+  }
+
+  .footerArrow{
+    position: absolute;
+    top: 394%;
+    left: 90%;
   }
 
 }
