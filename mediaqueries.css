@@ -9,6 +9,12 @@
     justify-content: space-around;
   }
 
+  #desktop-nav .toggle{
+    position: absolute;
+    top: 2.7%;
+    right: 3%;
+  }
+
   .section__pic-container{
     display: flex;
     justify-content: center;
@@ -23,6 +29,10 @@
 
   section {
     padding: 0;
+  }
+
+  #about{
+    margin-top: 5rem;
   }
 
   .section__text__p1 {
@@ -63,7 +73,7 @@
     position: relative;
     width: 80%;
     margin: auto;
-    margin-top: 20rem;
+    margin-top: 5rem;
     text-align: center; /* Center the content horizontally */
   }
   
