@@ -145,7 +145,6 @@
 /* For mobile screens (max-width: 767px) */
 @media screen and (max-width: 425px) {
 
-
   .logo{
     display: none;
   }
@@ -156,11 +155,34 @@
     display: flex;
   }
 
+  .menu-links {
+    position: fixed; /* Changed to fixed */
+    top: 7rem; /* Aligned to the top of the viewport */
+    right: 7rem;
+    background-color: var(--color-background-primary);
+    width: 150px; /* Adjusted width */
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 999; /* Added a high z-index value */
+  }
+
+  .menu-links li{
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+
+  .menu-links a {
+    font-size: 1rem; /* Adjusted font size */
+  }
+
   #hamburger-nav .hamburger-menu{
     position: absolute;
     right: 55px;
     top: 60px
   }
+
 .toggle{
     position: absolute;
     top: 4px;
@@ -174,6 +196,10 @@
   #profile{
     height: 75vh;
     margin-bottom: 6rem;
+  }
+
+  #profile .title{
+    font-size: 2.5rem;
   }
 
 
@@ -197,6 +223,7 @@
     position: relative;
     
   }
+
   .section__pic-container img{
     display: none;
     
@@ -252,17 +279,22 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    right: 20px;
+    right: 115px;
     height: 600px;
     padding: 1rem;
-    
+    margin-top: 1rem;
   }
 
+  .text-container {
+    max-width: 370px; /* Adjust this value to your desired width */
+  }
 
   .text-container p{
     text-align: center;
-    font-size: .8rem;
+    font-size: 1rem;
     color: var(--color-text-secondary);
+    padding: 1rem;
+    line-height: 1.5rem;
 
   }
 
@@ -288,8 +320,36 @@
   
   }
 
+  #experience p{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    width: max-content;
+  }
+  #experience .title{
+    text-align: center;
+    font-size: 2rem;
+    width: max-content;
+  }
+
+  .experience-details-container{
+    display: flex;
+    flex-direction: unset;
+  }
+
+  .experience-details-container .details-container {
+    padding: 1rem; /* Adjust the padding as needed */
+    gap: 1rem; /* Adjust the gap between boxes as needed */
+    justify-content: center;
+    width: min-content;
+    position: relative;
+    
+  }
+
   .article-container {
     justify-content: center; /* Center the content horizontally */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
   }
 
   #projects {
