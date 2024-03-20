@@ -12,6 +12,7 @@ function toggleTheme(isDarkMode) {
   const icons = document.querySelectorAll('.icons2');
   const arrows = document.querySelectorAll('.arrow');
   root.classList.toggle('dark', isDarkMode);
+
   icons.forEach(icon => {
     if (isDarkMode) {
       icon.style.filter = 'invert(100%) sepia(0%) saturate(13%) hue-rotate(275deg) brightness(106%) contrast(106%)';
@@ -33,18 +34,27 @@ function toggleTheme(isDarkMode) {
 function setInitialTheme() {
   const isDarkMode = localStorage.getItem('darkMode') === 'true';
   toggleTheme(isDarkMode);
+
   const toggle = document.getElementById('toggleDark');
+  const toggle2 = document.getElementById('toggleDark2');
+
   toggle.classList.toggle('bi-moon', isDarkMode);
   toggle.classList.toggle('bi-brightness-high-fill', !isDarkMode);
   toggle.style.color = isDarkMode ? 'white' : 'black';
+
+  toggle2.classList.toggle('bi-moon', isDarkMode);
+  toggle2.classList.toggle('bi-brightness-high-fill', !isDarkMode);
+  toggle2.style.color = isDarkMode ? 'white' : 'black';
+
   window.scrollTo(0, 0);
 }
 
 // Event listener for theme toggle button
 const toggle = document.getElementById('toggleDark');
+const toggle2 = document.getElementById('toggleDark2');
 const body = document.querySelector('body');
 toggle.addEventListener('click', handleToggleClick);
-toggle.addEventListener('touchstart', handleToggleTouch);
+toggle2.addEventListener('touchstart', handleToggleTouch);
 
 function handleToggleClick() {
   const isDarkMode = !document.documentElement.classList.contains('dark');
@@ -57,10 +67,18 @@ function handleToggleClick() {
   toggle.style.transition = '1s';
 }
 
-function handleToggleTouch(event) {
-  event.preventDefault(); // Prevent default touch behavior
-  handleToggleClick.call(this); // Call the click event handler
+function handleToggleTouch() {
+  const isDarkMode = !document.documentElement.classList.contains('dark');
+  toggleTheme(isDarkMode);
+  this.classList.toggle('bi-moon', isDarkMode);
+  this.classList.toggle('bi-brightness-high-fill', !isDarkMode);
+  localStorage.setItem('darkMode', isDarkMode);
+  body.style.transition = '1s';
+  toggle2.style.color = isDarkMode ? 'white' : 'black';
+  toggle2.style.transition = '1s';
 }
+
+
 
 // Call setInitialTheme when the page loads
 window.addEventListener('load', setInitialTheme);
