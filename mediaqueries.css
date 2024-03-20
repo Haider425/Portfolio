@@ -508,18 +508,18 @@
     position: relative;
     right: 10px;
   }
-  #contact .contact-info-container .email a{
+  #contact .contact-info-container .email a::after{
     content: "Email";
     display: block;
     position: relative;
-    left: 1px;
+    left: 8px;
 
   }
 
   #contact .contact-info-container .linkedin a{
-    content: "Phone";
     display: block;
     position: relative;
+    margin-top: 5px;
     left: 1px;
   }
   
@@ -549,11 +549,12 @@
 
   footer nav ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 80%;
     position: relative;
     left: 50px;
-  
+    gap: 0rem;
+    
   }
 
   footer nav ul li{
@@ -561,6 +562,7 @@
     justify-content: center;
     align-items: center;
     width: 100px;
+    gap: 0rem;
   }
 
   footer nav ul li a{

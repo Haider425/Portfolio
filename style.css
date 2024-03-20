@@ -549,6 +549,10 @@ article .icon {
   font-size: larger;
 }
 
+#contact .contact-info-container .email a::after{
+    content: "haider.saleem@ontariotechu.net";
+}
+
 .contact-icon {
   cursor: default;
 }
