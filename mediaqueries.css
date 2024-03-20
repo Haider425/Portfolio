@@ -11,6 +11,7 @@
 
   #profile{
     height: 70vh;
+    margin-bottom: 5rem;
   }
 
   #hamburger-nav .toggle{
@@ -113,9 +114,9 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-top: 30rem;
+      margin-top: 10rem;
       align-items: center;
-      height: auto;
+      height: 60vh;
   }
 
   .contact-info-upper-container{
