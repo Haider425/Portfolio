@@ -168,6 +168,11 @@
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     z-index: 999; /* Added a high z-index value */
+
+
+  }
+  .menu-links.hide {
+    max-height: 0;
   }
 
   .menu-links li{
@@ -555,7 +560,7 @@
   }
 
   footer nav {
-    width: 100%;
+    min-width: 100%;
     display: flex;
   }
 

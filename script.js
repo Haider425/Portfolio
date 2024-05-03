@@ -86,6 +86,16 @@ function handleToggleTouch() {
   toggle2.style.transition = '1s';
 }
 
+window.addEventListener("scroll", function() {
+  var menu = document.querySelector(".menu-links");
+  if (window.scrollY > 0) {
+    menu.classList.add("hide");
+  } else {
+    menu.classList.remove("hide");
+  }
+});
+
+
 
 
 // Call setInitialTheme when the page loads
