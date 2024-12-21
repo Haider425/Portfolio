@@ -41,6 +41,7 @@ a,
 nav,
 .nav-links {
   display: flex;
+  
 }
 
 nav {
@@ -412,7 +413,7 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  
 }
 
 .section__pic-container {
@@ -470,7 +471,7 @@ article .icon {
 .color-container {
   border-color: var(--color-text-primary);
   background: var(--color-background-primary);
-  height: 20rem;
+  height: auto;
 }
 
 .project-img {
@@ -523,7 +524,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  margin-top: 20rem;
+  margin-top: 5rem;
 }
 
 .contact-info-upper-container {
